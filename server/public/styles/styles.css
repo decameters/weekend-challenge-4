@@ -9,14 +9,24 @@ img {
 
 #img1, #img4 {
     background-color: lightgoldenrodyellow;
-    width: 350px;
-    height: 350px;
-    padding: 25px
+    width: 400px;
+    height: 400px;
+    padding: 50px
 }
 
 #img2, #img3 {
     background-color: white;
-    width: 350px;
-    height: 350px;
-    padding: 25px
+    width: 400px;
+    height: 400px;
+    padding: 50px
+}
+
+.btn {
+    background-color: goldenrod;
+    margin-top: 10px;
+}
+
+.btn:hover {
+    background-color: lightsalmon;
+    margin-top: 10px;
 }

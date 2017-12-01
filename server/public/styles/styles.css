@@ -1,3 +1,22 @@
 body {
-    background-color: yellowgreen;
+    background-color: white;
+}
+
+img {
+    height: 300px;
+    width: 300px
+}
+
+#img1, #img4 {
+    background-color: lightgoldenrodyellow;
+    width: 350px;
+    height: 350px;
+    padding: 25px
+}
+
+#img2, #img3 {
+    background-color: white;
+    width: 350px;
+    height: 350px;
+    padding: 25px
 }

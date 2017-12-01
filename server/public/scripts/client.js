@@ -11,6 +11,8 @@ app.controller('GalleryController', ['$http', function ($http){
     self.clickCountTwo = 0;
     self.clickCountThree = 0;
     self.clickCountFour = 0;
+    self.clickCountFive = 0;
+    self.clickCountSix = 0;
 
     self.clickOne = function(){
         self.clickCountOne ++;
@@ -26,6 +28,14 @@ app.controller('GalleryController', ['$http', function ($http){
 
     self.clickFour = function(){
         self.clickCountFour++;
+    }
+
+    self.clickFive = function(){
+        self.clickCountFive++;
+    }
+
+    self.clickSix = function(){
+        self.clickCountSix++;
     }
 
 }]);

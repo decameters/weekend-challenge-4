@@ -3,8 +3,8 @@ body {
 }
 
 img {
-    height: 300px;
-    width: 300px
+    max-width: 100%;
+    max-height: 100%
 }
 
 #img1, #img4 {
@@ -28,5 +28,10 @@ img {
 
 .btn:hover {
     background-color: lightsalmon;
+    margin-top: 10px;
+}
+
+p {
+    float: right;
     margin-top: 10px;
 }

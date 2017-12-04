@@ -2,36 +2,52 @@ body {
     background-color: white;
 }
 
-img {
-    max-width: 100%;
-    max-height: 100%
+.col-md-3 {
+    height:400px;
+    width: 400px;
 }
 
-#img1, #img3, #img5 {
-    background-color: lightgoldenrodyellow;
-    width: 350px;
-    height: 350px;
-    padding: 50px
-}
-
-#img2, #img4, #img6 {
-    background-color: white;
-    width: 350px;
-    height: 350px;
-    padding: 50px
-}
-
-.btn {
-    background-color: goldenrod;
-    margin-top: 10px;
-}
-
-.btn:active {
+.description {
     background-color: lightsalmon;
-    margin-top: 10px;
+    border: 20px solid white;
+    height: 300px;
+    width: 300px;
+    text-align: center;
+    
+    padding: 100px 0;
+}
+
+#scout, #max, #weewee {
+    background-color: lightgoldenrodyellow;
+    height: 300px;
+    width: 300px;
+    padding: 20px
+}
+
+
+#dfj, #kf, #amalia {
+    background-color:antiquewhite;
+    width: 300px;
+    height: 300px;
+    padding: 20px
+}
+
+.info {
+    background-color: white;
+}
+
+button {
+    background-color: goldenrod;
+    margin-left: 20px;
+    margin-top: 10px
+}
+
+button:active {
+    background-color: lightsalmon;
+    margin-left: 20px;
+    margin-top: 10px
 }
 
 p {
-    float: right;
-    margin-top: 10px;
+    margin-left: 20px;
 }

@@ -31,7 +31,7 @@ app.controller('GalleryController', ['$http', function ($http) {
             visable: true
         },
         {
-            url: "./images/weewee.jpg",
+            url: "./images/weewee1.jpg",
             description: "WEE WEE",
             alt: "weewee",
             visable: true            

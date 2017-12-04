@@ -1,49 +1,46 @@
-.col-md-3 {
-    height:400px;
-    width: 400px;
+h1, h3 {
+    text-align: center;
+    margin-top: 10px;
+    color: sandybrown;
 }
-
 .description {
-    background-color: lightgoldenrodyellow;
-    border: 20px solid lightsalmon;
+    background-color: sandybrown;
+    border: 20px solid blanchedalmond;
     height: 300px;
     width: 300px;
     text-align: center;
-    
+    font-weight: bold;
     padding: 100px 0;
 }
 
 #scout, #max, #weewee, #dfj, #kf, #amalia {
-    background-color: lightsalmon;
+    background-color: blanchedalmond;
     height: 300px;
     width: 300px;
     padding: 20px
 }
 
-
-/* #dfj, #kf, #amalia {
-    background-color:antiquewhite;
-    width: 300px;
-    height: 300px;
-    padding: 20px
-} */
-
 .info {
-    background-color: white;
+    width: 300px;
+    background-color: blanchedalmond;
+    margin-bottom:20px;
 }
 
 button {
-    background-color: goldenrod;
+    background-color: gold;
+    border: 0.5px solid black;
     margin-left: 20px;
-    margin-top: 10px
+    margin-bottom: 20px;
 }
 
 button:active {
-    background-color: lightsalmon;
+    background-color: sandybrown;
     margin-left: 20px;
-    margin-top: 10px
+    margin-bottom: 20px;
 }
 
-p {
-    margin-left: 20px;
+.lovesCount {
+    float: right;
+    margin-right: 20px;
+    margin-bottom: 20px;
 }

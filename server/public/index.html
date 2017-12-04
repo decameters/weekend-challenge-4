@@ -31,77 +31,23 @@
             id="{{image.alt}}"
             ng-click="vm.showDescription(image)"
             ng-show="image.visable">
-            <div class="description" ng-click="vm.showDescription(image)" ng-hide="image.visable">{{image.description}}</div>
+            
+            <div ng-click="vm.showDescription(image)">
+            <div class="description"
+            ng-click="clicks = clicks + 1"
+            ng-init="clicks=1"
+            ng-hide="image.visable">
+            {{image.description}}
+            <br>
+            has been clicked {{clicks}} times</div></div>
 
 
-            <div class="info"><button ng-click="counter = counter + 1" ng-init="counter=0">LOVE</button> 
-            <p>this photo has {{counter}} loves</p></div>
+            <div class="info">
+                <button ng-click="counter = counter + 1" ng-init="counter=0">LOVE</button>
+                <span class="lovesCount">this photo has {{counter}} loves</span>
+            </div>
 
         </div>
     </div>      
-
-    <li ng-repeat="food in vm.foodArray">
-            {{food.name}}
-            <span ng-show="food.is_hot">is <b>hot</b></span>
-            <!-- for TRUE -->
-            <span ng-hide="food.is_hot"><b>isn't hot at all</b></span>
-            <!-- for FALSE -->
-            <!-- <p>this photo has {{vm.clickCount}} loves</p>            -->
-            <!-- ng-repeat="image in vm.imageList"> -->
-            <!-- ng-click="openInNewWindow($index)"
-                 ng-show="nowShowing==$index"> -->
-            <!-- <img ng-src="{{vm.imageList[1].url}}" 
-                 alt="{{vm.imageList[1].alt}}"
-                 ng-click="vm.showDescription(vm.imageList[1])"> -->
-                 <!-- <input type="button" value="Show Hide DIV" ng-click="ShowHide()" />
-                 <br />
-                 <br /> -->
-        
-    
-
-    <div class="descriptions" ng-repeat="descriptions in vm.imageList">
-        {{descriptions.description}}
-    </div>
-    
-
-    <!-- this was all of my original HTML with my images hardcoded in. i think i should've stuck with this. -->
-    <!-- styling was way easier... -->
-    <!-- <div class="container">
-            <div class="row">
-                <div class="col-md-3 .col-md-offset-2" id="img1">
-                    <img ng-src="images/scout4.jpg" alt="scout"/>
-                    <span ng click ng-show="descrips.description">scout</span>
-                    <button type="button" class="btn btn-xs" ng-click="vm.clickOne(clickCountOne)">LOVE</button>
-                    <p>this photo has {{vm.clickCountOne}} loves {{descrips.description}}</p>
-                </div>
-                <div class="col-md-3" id="img2">
-                    <img ng-src="images/dfj4.jpg" alt="dfj" />
-                    <button type="button" class="btn btn-xs" ng-click="vm.clickTwo(clickCountTwo)">LOVE</button>
-                    <p>this photo has {{vm.clickCountTwo}} loves</p>
-                </div>
-                <div class="col-md-3" id="img3">
-                    <img ng-src="images/max3.jpg" alt="max" />
-                    <button type="button" class="btn btn-xs" ng-click="vm.clickThree(clickCountThree)">LOVE</button>
-                    <p>this photo has {{vm.clickCountThree}} loves</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-3 .col-md-offset-2" id="img4">
-                    <img ng-src="images/kf_riotfest2.jpg" alt="kf" />
-                    <button type="button" class="btn btn-xs" ng-click="vm.clickFour(clickCountFour)">LOVE</button>
-                    <p>this photo has {{vm.clickCountFour}} loves</p>
-                </div>
-                <div class="col-md-3" id="img5">
-                    <img ng-src="images/weewee.jpg" alt="weewee" />
-                    <button type="button" class="btn btn-xs" ng-click="vm.clickFive(clickCountFive)">LOVE</button>
-                    <p>this photo has {{vm.clickCountFive}} loves</p>
-                </div>
-                <div class="col-md-3" id="img6">
-                    <img ng-src="images/amalia3.jpg" alt="amalia" />
-                    <button type="button" class="btn btn-xs" ng-click="vm.clickSix(clickCountSix)">LOVE</button>
-                    <p>this photo has {{vm.clickCountSix}} loves</p>
-                </div>
-            </div>
-    </div> -->
 </body>
 </html>
